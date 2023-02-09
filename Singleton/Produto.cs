@@ -2,12 +2,18 @@
 {
     public class Produto
     {
-        public Produto() { }
+        private static Produto _instance;
+        public Produto() {}
+
+        public static Produto GetInstance()
+        {
+            if (_instance == null)
+            {
+                _instance = new Produto();
+            }
+            return _instance;
+        }
         public string Name { get; set; }
-        //public string Descricao { get; set; }
-        //public string Marca { get; set;}
-        //public string Preco { get; set; }
-        //public string Garantia { get; set; }
 
     }
 }

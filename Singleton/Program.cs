@@ -2,12 +2,18 @@
 
 public class Program
 {
-    // Padrão de projeto no geral pouco utilizado
+    // O padrão de projeto Singleton, tem apenas um ponto de acesso.
+    // Logo, na implementação, é necessário fazer a verificação para que apenas uma instacia seja criada.
     static void Main()
     {
-        Produto variavelSingleton = new Produto();
+        Produto variavelSingleton = Produto.GetInstance();
         variavelSingleton.Name = "Software Singleton";
-        Console.WriteLine(variavelSingleton.Name);
+
+        Produto variavelSingleton2 = Produto.GetInstance();
+        variavelSingleton2.Name = "Software Singleton 2";
+
+        if(variavelSingleton== variavelSingleton2)
+            Console.WriteLine(variavelSingleton2.Name);
 
         Console.Read();
     }
