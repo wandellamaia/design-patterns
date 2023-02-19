@@ -3,7 +3,7 @@
     public class Produto
     {
         private static Produto _instance;
-        public Produto() {}
+        public Produto() { }
 
         public static Produto GetInstance()
         {
