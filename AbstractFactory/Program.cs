@@ -11,18 +11,19 @@ public class program
     {
         Console.WriteLine("Fábrica");
 
-        IAbstractFactory factory = new Factory();
-        Console.WriteLine(factory.CreateDoor().GetName());
-        Console.WriteLine(factory.CreateWindow().GetName());
-        Console.WriteLine(factory.CreateRoof().GetColor());
+        UserFactory(new Factory());
 
         Console.WriteLine("   ");
 
         Console.WriteLine("Bazar");
 
-        IAbstractFactory factoryBazar = new FactoryBazar();
-        Console.WriteLine(factoryBazar.CreateDoor().GetName());
-        Console.WriteLine(factoryBazar.CreateWindow().GetName());
-        Console.WriteLine(factoryBazar.CreateRoof().GetColor());
+        UserFactory(new FactoryBazar());
+    }
+
+    public static void UserFactory(IAbstractFactory factory)
+    {
+        Console.WriteLine(factory.CreateDoor().GetName());
+        Console.WriteLine(factory.CreateWindow().GetName());
+        Console.WriteLine(factory.CreateRoof().GetColor());
     }
 }
