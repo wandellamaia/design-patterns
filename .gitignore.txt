@@ -73,6 +73,9 @@ publish/
 *.pubxml
 *.azurePubxml
 
+# Visual Studio 2015/2017 cache/options directory
+.vs/
+
 # NuGet Packages Directory
 ## TODO: If you have NuGet Package Restore enabled, uncomment the next line
 packages/

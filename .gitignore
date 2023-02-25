@@ -1,0 +1,21 @@
+﻿################################################################################
+# Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
+################################################################################
+
+/AbstractFactory/.vs/AbstractFactory/DesignTimeBuild/.dtbcache.v2
+/AbstractFactory/.vs/AbstractFactory/FileContentIndex/acefa9ad-ac9f-449b-b6f0-2398ee351604.vsidx
+/AbstractFactory/.vs/AbstractFactory/FileContentIndex/b506a075-37fc-4014-828f-6aa66a6459b3.vsidx
+/AbstractFactory/.vs/AbstractFactory/FileContentIndex
+/AbstractFactory/.vs/AbstractFactory/v17/.futdcache.v2
+/AbstractFactory/.vs/AbstractFactory/v17/.suo
+/AbstractFactory/.vs/ProjectEvaluation
+/AbstractFactory/obj
+/AbstractFactory/bin/Debug/net6.0
+/Singleton/.vs
+/Singleton/bin/Debug/net6.0
+/Singleton/obj/Debug/net6.0
+/Singleton/obj/project.assets.json
+/Singleton/obj/project.nuget.cache
+/Singleton/obj/Singleton.csproj.nuget.dgspec.json
+/Singleton/obj/Singleton.csproj.nuget.g.props
+/Singleton/obj/Singleton.csproj.nuget.g.targets
