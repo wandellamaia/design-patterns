@@ -2,15 +2,21 @@
 {
     class Program
     {
+        /*
+         Este tipo de designer, é um dos mais utilizados.
+            Ele permite que deixe o código mais flexivél ao criar mais objetos.
+         */
         static void Main()
         {
-            new VehicleFactory("bike");
+            VehicleCode(new SkateInLine());
+            VehicleCode(new Bike());
+            VehicleCode(new Car());
         }
 
-        public void VehicleCode(IVehicleFactory vehicleFactory)
+        public static void VehicleCode(Vehicle vehicleFactory)
         {
             Console.WriteLine(vehicleFactory.VehicleType());
-            Console.WriteLine(VehicleFactory.getVehicle("bike").NumberWheels());
+            Console.WriteLine(vehicleFactory.NumberWheels());
         }
     }
 }

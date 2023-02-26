@@ -6,36 +6,51 @@ using System.Threading.Tasks;
 
 namespace FactoryMethod
 {
-    public class Vehicles
+    public class SkateInLine : Vehicle
     {
+        public readonly int wheels;
+
+        public SkateInLine()
+        {
+            this.wheels = 8;
+        }
+        public override int NumberWheels()
+        {
+            return wheels;
+        }
+
+        public override string VehicleType()
+        {
+            return "Skate In Line";
+        }
     }
-    public class Car : IVehicleFactory
+    public class Car : Vehicle
     {
-        private readonly int Wheels;
+        private readonly int wheels;
         public Car()
         {
-            this.Wheels = 4;
+            this.wheels = 4;
         }
-        public int NumberWheels()
+        public override int NumberWheels()
         {
-            return this.Wheels;
+            return this.wheels;
         }
-        public string VehicleType()
+        public override string VehicleType()
         {
             return "Car";
         }
     }
-    public class Bike: IVehicleFactory
+    public class Bike: Vehicle
     {
-        private readonly int Wheels;
+        private readonly int wheels;
         public Bike() {
-            this.Wheels = 2;
+            this.wheels = 2;
         }
-        public int NumberWheels()
+        public override int NumberWheels()
         {
-            return this.Wheels;
+            return this.wheels;
         }
-        public string VehicleType()
+        public override string VehicleType()
         {
             return "Bicycle";
         }
